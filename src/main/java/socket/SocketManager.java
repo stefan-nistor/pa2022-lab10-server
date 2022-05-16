@@ -1,7 +1,9 @@
 package socket;
 
-import Client.ClientThread;
-import lombok.*;
+import client.ClientThread;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import user.User;
 
 import java.io.IOException;
@@ -37,7 +39,5 @@ public class SocketManager {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-
     }
 }
